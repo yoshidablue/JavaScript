@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* スタイルシートがhtmlとは分離したファイルに存在する場合は文字コードを決定しなければならないというルールがある
+　　外部CSSの文字コードの指定では必ずCSSファイルの先頭に記述する */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.box {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto 50px;
+  background-color: #eee;
+}
+
+#back {
+  position: fixed; /* position: flexed; を指定することで、「トップへ戻る」ボタンは常に同じ位置に表示されるようになる */
+  right: 20px;
+  bottom: 20px;
+}
+
+#back img {
+  width: 50px;
+}
